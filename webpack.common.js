@@ -2,6 +2,10 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import WebpackFavicons from 'webpack-favicons';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default {
     entry: './src/index.js',

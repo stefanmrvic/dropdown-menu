@@ -1,0 +1,29 @@
+header {
+    background-color: black;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    height: 33px;
+    justify-content: flex-end;
+    padding: 17px 80px;
+    gap: 46px;
+
+    .nav__link {
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 16px;
+        font-family: sans-serif;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .nav__link:hover {
+        color: white;
+    }
+
+    .nav__profile {
+        height: 43px;
+        border-radius: 30px;
+    }
+}
