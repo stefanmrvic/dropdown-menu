@@ -2,13 +2,20 @@ header {
     background-color: black;
 }
 
+nav {
+    position: relative;
+}
+
 .nav__container {
+    position: relative;
     display: flex;
     align-items: center;
     height: 33px;
     justify-content: flex-end;
     padding: 17px 80px;
     gap: 46px;
+    z-index: 99999;
+    background-color: black;
 
     .nav__link {
         color: rgba(255, 255, 255, 0.63);
@@ -25,5 +32,82 @@ header {
     .nav__profile {
         height: 43px;
         border-radius: 30px;
+    }
+}
+
+.dropdown-nav__container.open {
+    top: 67px;
+}
+
+.dropdown-nav__container {
+    display: none;
+    position: absolute;
+    top: -329px;
+    right: 80px;
+    flex-direction: column;
+    gap: 29px;
+    padding: 15px 20px 15px 15px;
+    background-color: white;
+    min-width: 300px;
+    max-width: 300px;
+    transition: top 0.5s ease;
+    overflow: hidden;
+
+    .dropdown-nav__item:first-child {
+        border-bottom: 1px solid #474747;
+        padding-bottom: 18px;
+    }
+
+    .dropdown-nav__profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-nav__icon-wrapper {
+        border-radius: 30px;
+        background-color: #dedada;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-nav__link-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-nav__link {
+        text-decoration: none;
+    }
+
+    .dropdown-nav__link-icon--1,
+    .dropdown-nav__link-icon--2 {
+        color: #474747;
+    }
+
+    .dropdown-nav__link-icon--2 {
+        margin-left: auto;
+    }
+
+    .dropdown-nav__link-text {
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #474747;
+        margin-left: 32px;
+    }
+
+    .dropdown-nav__profile-pic {
+        height: 43px;
+        border-radius: 30px;
+    }
+
+    .dropdown-nav__profile-name {
+        color: #262626;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: 600;
+        margin-left: 21px;
     }
 }

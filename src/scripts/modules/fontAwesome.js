@@ -6,7 +6,8 @@ library.add(
     icon.faGear,
     icon.faCircleQuestion,
     icon.faMoon,
-    icon.faArrowRightFromBracket
+    icon.faArrowRightFromBracket,
+    icon.faChevronRight
 );
 
 dom.watch();

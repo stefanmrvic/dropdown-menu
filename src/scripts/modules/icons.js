@@ -7,4 +7,5 @@ export {
     faCircleQuestion,         // Help & Support Icon
     faMoon,                   // Display & Accessibility Icon
     faArrowRightFromBracket,  // Logout Icon
+    faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
