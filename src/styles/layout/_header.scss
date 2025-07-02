@@ -35,23 +35,27 @@ nav {
     }
 }
 
-.dropdown-nav__container.open {
+.dropdown-nav__wrapper.open {
+    max-height: 397px;
+}
+
+.dropdown-nav__wrapper {
+    position: absolute;
     top: 67px;
+    right: 80px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
 .dropdown-nav__container {
-    display: none;
-    position: absolute;
-    top: -329px;
-    right: 80px;
+    display: flex;
     flex-direction: column;
     gap: 29px;
     padding: 15px 20px 15px 15px;
     background-color: white;
     min-width: 300px;
     max-width: 300px;
-    transition: top 0.5s ease;
-    overflow: hidden;
 
     .dropdown-nav__item:first-child {
         border-bottom: 1px solid #474747;

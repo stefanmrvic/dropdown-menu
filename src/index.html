@@ -8,7 +8,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav role="navigation">
             <ul class="nav__container">
                 <li class="nav__item">
                     <a href="#" class="nav__link">Home</a>
@@ -23,75 +23,77 @@
                     <a href="#" class="nav__link">Contact</a>
                 </li>
                 <li class="nav__item profile">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link dropdown-toggler" aria-expanded="false">
                         <img src="./assets/images/profile.jpeg" alt="Profile picture of a very handsome man" class="nav__profile">
                     </a>
                 </li>
             </ul>
 
-            <ul class="dropdown-nav__container">
-                <li class="dropdown-nav__item">
-                    <div class="dropdown-nav__profile">
-                        <img src="./assets/images/profile.jpeg" alt="Profile picture of a very handsome man" class="dropdown-nav__profile-pic">
-                        <p class="dropdown-nav__profile-name">Stefan Mrvic</p>
-                    </div>
-                </li>
-                <li class="dropdown-nav__item">
-                    <a href="#" class="dropdown-nav__link">
-                        <div class="dropdown-nav__link-container">
-                            <div class="dropdown-nav__icon-wrapper">
-                                <i class="dropdown-nav__link-icon--1 fa-solid fa-user"></i>
-                            </div>
-                            <p class="dropdown-nav__link-text">Edit Profile</p>
-                            <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
+            <div class="dropdown-nav__wrapper">
+                <ul class="dropdown-nav__container" aria-hidden="true">
+                    <li class="dropdown-nav__item">
+                        <div class="dropdown-nav__profile">
+                            <img src="./assets/images/profile.jpeg" alt="Profile picture of a very handsome man" class="dropdown-nav__profile-pic">
+                            <p class="dropdown-nav__profile-name">Stefan Mrvic</p>
                         </div>
-                    </a>
-                </li>
-                <li class="dropdown-nav__item">
-                    <a href="#" class="dropdown-nav__link">
-                        <div class="dropdown-nav__link-container">
-                            <div class="dropdown-nav__icon-wrapper">
-                                <i class="dropdown-nav__link-icon--1 fa-solid fa-gear"></i>
+                    </li>
+                    <li class="dropdown-nav__item">
+                        <a href="#" class="dropdown-nav__link">
+                            <div class="dropdown-nav__link-container">
+                                <div class="dropdown-nav__icon-wrapper">
+                                    <i class="dropdown-nav__link-icon--1 fa-solid fa-user"></i>
+                                </div>
+                                <p class="dropdown-nav__link-text">Edit Profile</p>
+                                <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
                             </div>
-                            <p class="dropdown-nav__link-text">Settings & Privacy</p>
-                            <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
-                        </div>
-                    </a>
-                </li>
-                <li class="dropdown-nav__item">
-                    <a href="#" class="dropdown-nav__link">
-                        <div class="dropdown-nav__link-container">
-                            <div class="dropdown-nav__icon-wrapper">
-                                <i class="dropdown-nav__link-icon--1 fa-solid fa-circle-question"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown-nav__item">
+                        <a href="#" class="dropdown-nav__link">
+                            <div class="dropdown-nav__link-container">
+                                <div class="dropdown-nav__icon-wrapper">
+                                    <i class="dropdown-nav__link-icon--1 fa-solid fa-gear"></i>
+                                </div>
+                                <p class="dropdown-nav__link-text">Settings & Privacy</p>
+                                <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
                             </div>
-                            <p class="dropdown-nav__link-text">Help & Support</p>
-                            <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
-                        </div>
-                    </a>
-                </li>
-                <li class="dropdown-nav__item">
-                    <a href="#" class="dropdown-nav__link">
-                        <div class="dropdown-nav__link-container">
-                            <div class="dropdown-nav__icon-wrapper">
-                                <i class="dropdown-nav__link-icon--1 fa-solid fa-moon"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown-nav__item">
+                        <a href="#" class="dropdown-nav__link">
+                            <div class="dropdown-nav__link-container">
+                                <div class="dropdown-nav__icon-wrapper">
+                                    <i class="dropdown-nav__link-icon--1 fa-solid fa-circle-question"></i>
+                                </div>
+                                <p class="dropdown-nav__link-text">Help & Support</p>
+                                <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
                             </div>
-                            <p class="dropdown-nav__link-text">Display & Accessibility</p>
-                            <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
-                        </div>
-                    </a>
-                </li>
-                <li class="dropdown-nav__item">
-                    <a href="#" class="dropdown-nav__link">
-                        <div class="dropdown-nav__link-container">
-                            <div class="dropdown-nav__icon-wrapper">
-                                <i class="dropdown-nav__link-icon--1 fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown-nav__item">
+                        <a href="#" class="dropdown-nav__link">
+                            <div class="dropdown-nav__link-container">
+                                <div class="dropdown-nav__icon-wrapper">
+                                    <i class="dropdown-nav__link-icon--1 fa-solid fa-moon"></i>
+                                </div>
+                                <p class="dropdown-nav__link-text">Display & Accessibility</p>
+                                <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
                             </div>
-                            <p class="dropdown-nav__link-text">Logout</p>
-                            <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                    <li class="dropdown-nav__item">
+                        <a href="#" class="dropdown-nav__link">
+                            <div class="dropdown-nav__link-container">
+                                <div class="dropdown-nav__icon-wrapper">
+                                    <i class="dropdown-nav__link-icon--1 fa-solid fa-arrow-right-from-bracket"></i>
+                                </div>
+                                <p class="dropdown-nav__link-text">Logout</p>
+                                <i class="dropdown-nav__link-icon--2 fa-solid fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
